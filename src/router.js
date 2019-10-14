@@ -30,6 +30,11 @@ export default new Router({
       path: '/apex',
       name: 'apex',
       component: () => import(/* webpackChunkName: "server" */ './views/Apex.vue')
+    },
+    {
+      path: '/overwatch',
+      name: 'overwatch',
+      component: () => import(/* webpackChunkName: "server" */ './views/Overwatch.vue')
     }
   ]
 })

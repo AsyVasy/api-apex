@@ -1,6 +1,7 @@
 const axios = require("axios");
 const express = require("express");
 const cors = require("cors")
+const overwatch = require('overwatch-api');
 
 const app = express();
 
@@ -29,6 +30,22 @@ app.post("/user", (req, res) => {
       res.send("error");
     });
 })
+
+app.post("/overwatch", (req, res) => {
+
+  const platform = req.body.platform;
+  const region = req.body.region;
+  const tag = req.body.pseudo;
+
+  overwatch.getProfile(platform, region, tag, (err, json) => {
+    if (err) console.error(err);
+    else {
+      console.log(json);
+      res.send(json);
+    }
+  });
+})
+
 
 app.post("/apex", (req, res) => {
   console.log('dsdssdsd');

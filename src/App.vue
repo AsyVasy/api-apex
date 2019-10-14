@@ -10,6 +10,7 @@
       <router-link to="/about">About</router-link>
       <router-link to="/server">Server</router-link>
       <router-link to="/apex">Apex</router-link>
+      <router-link to="/overwatch">Overwatch</router-link>
     </div>
     <router-view/>
     <Cadre id="box" class="cadreHide"></Cadre>
