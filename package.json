@@ -11,7 +11,7 @@
     "all": "nodemon server.js || vue-cli-service serve"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "overwatch-api": "^0.8.0",
